@@ -696,6 +696,11 @@ case ${target} in
         macos_maj=11
         def_ld64=609.0
         ;;
+      *-*-darwin21*)
+        # Darwin 21 corresponds to macOS 12.
+        macos_maj=12
+        def_ld64=609.0
+        ;;
       *-*-darwin)
         case ${cpu_type} in
           aarch64) macos_maj=11 ;;
